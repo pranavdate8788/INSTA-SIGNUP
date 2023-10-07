@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insta-Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h1>Login to InstaGram</h1>
+            <i id="logo" class="fa-brands fa-square-instagram" style="color: #d967f9;"></i>
+            <form>
+          <div class="input-group">
+            <label for="username">Username :</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Enter your Username"
+            />
+          </div>
+          
+          <div class="input-group">
+            <label for="email">EMAIL-ID :</label>
+            <input
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="Enter your Email here"
+              onkeyup="validateMail()"
+            />
+            <span id="email-error"><i class="fa-solid fa-exclamation"></i>email is required</span>
+            <div class="input-group">
+                <label for="password">Password :</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Enter your password"
+                  onkeyup="validatePass()"
+                />
+                <span id="pass-error"><i class="fa-solid fa-exclamation"></i></span>
+            </div>
+          <button id="login">Login</button>
+            </form>
+            <div class="reg">
+                <h3>Forgot Password ?</h3>
+                <a href="signup.html">Signup</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/8c9b0ad18f.js" crossorigin="anonymous"></script>
+<script src="login.html"></script>
+</body>
+</html>
